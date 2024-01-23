@@ -1,5 +1,5 @@
-# install puppet-lint -v 2.5.0
-
-exec { 'puppet-lint':
-  command => '/usr/bin/apt-get -y install puppet-lint -v 2.5.0',
+# execute pkill command to kill bashscript file killmenow
+exec { 'pkill':
+  command => 'pkill -9 -f killmenow',
+  path    => ['/usr/bin', '/usr/sbin', '/bin']
 }
